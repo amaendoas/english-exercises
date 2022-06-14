@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+button {
+  border: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #69B99D;
+  --second-color: #CCF4E6;
+  --dark-color: #0F241D;
+  --gray: #767676;
+  --light-gray: #E4E4E4;
+  --background-1: #F9F9F9;
+  --background-2: #FFF;
+
+}
+
+.page {
+  max-width: 140rem;
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+  font-size: 1.6rem;
+  padding: 0 12.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+ul {
+  display: flex;
+
+  gap: 3.2rem;
+}
+
+ul li {
+  padding: 2.6rem 0;
+}
+
+ul li a {
+  color: var(--gray);
+}
+
+ul li a:hover {
+  color: var(--primary-color);
+  padding-bottom: 2.6rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+main {
+  padding: 5rem 12.4rem;
+}
+
+.title h1 {
+  font-family: 'Poppins', sans-serif;
+  width: 35.7rem;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+}
+
+.title p {
+  width: 35.7rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  margin: 1.2rem 0 2.4rem 0;
+}
+
+.title button {
+  padding: 1.4rem 3.2rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.title button a {
+  color: var(--background-1);
+}

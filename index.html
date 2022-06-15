@@ -5,11 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>English Exercises</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
-<script src="script.js" defer></script>
 </head>
 <body>
   <div class="page">
@@ -34,22 +37,26 @@
           <h2>What do you want to practice?</h2>
           <p>Choose a english exercise by subject</p>
         </div>
-        <div class="cards">
-          <a class="card" href="verb-to-be.html">
-            <img src="img/verb.svg" alt="">
-            <h3>Verb to Be</h3>
-            <p>Practice the affirmative, negative and interrogative of verb to be.</p>
-          </a>
-          <a class="card">
-            <img src="img/present.svg" alt="">                      
-            <h3>Simple Present</h3>
-            <p>Coming Soon.</p>
-          </a>
-          <a class="card">
-            <img src="img/past.svg" alt="">    
-            <h3>Simple Past</h3>
-            <p>Coming Soon.</p>
-          </a>
+        <div class="cards swiper">
+          <div class="swiper-wrapper">
+
+            <a class="card swiper-slide" href="verb-to-be.html">
+              <img src="img/verb.svg" alt="">
+              <h3>Verb to Be</h3>
+              <p>Practice the affirmative, negative and interrogative of verb to be.</p>
+            </a>
+            <a class="card swiper-slide">
+              <img src="img/present.svg" alt="">                      
+              <h3>Simple Present</h3>
+              <p>Coming Soon.</p>
+            </a>
+            <a class="card swiper-slide">
+              <img src="img/past.svg" alt="">    
+              <h3>Simple Past</h3>
+              <p>Coming Soon.</p>
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
@@ -62,5 +69,7 @@
       <p>Made with 💜 by <a href="https://github.com/amaendoas" target="_blank">Amanda</a></p>
     </footer>
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
